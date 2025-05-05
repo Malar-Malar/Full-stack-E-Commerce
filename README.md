@@ -17,6 +17,13 @@ The goal of this project is to build a bakery shop ecommerce website that allows
 
 (https://docs.google.com/document/d/1PSh15wOctc5rfHkBDuhO6pZn6jAaFAOuvnItKMDb09M/edit?usp=sharing)
 
+**Swagger UI Screenshot**
+The project includes a Swagger-based API documentation for testing and exploring API endpoints:
+
+<img width="1078" alt="image" src="https://github.com/user-attachments/assets/3881fd5c-0968-416d-8ebc-c510e4026577" />
+
+
+
 ## Tech Stack
 
 **Frontend**: HTML, CSS, JavaScript  
