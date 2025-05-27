@@ -25,7 +25,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/orders")
-@CrossOrigin(origins="http://localhost:5500")
+@CrossOrigin(origins = {"http://localhost:5500", "http://127.0.0.1:5502","http://127.0.0.1:5501","http://localhost:3000"})
 public class OrderController {
 
     @Autowired
@@ -60,34 +60,6 @@ public class OrderController {
         return ResponseEntity.ok(response);
     }
 
-//    @PostMapping("/checkout/buy-now")
-//    public ResponseEntity<?> buyNowCheckout(@RequestBody OrderRequest request) {
-//        try {
-//            User user = userService.getCurrentUser(request.getUserId());
-//            Product product = productService.getProductById(request.getProduct().getId())
-//                    .orElseThrow(() -> new RuntimeException("Product not found"));
-//
-//            Order order = new Order();
-//            order.setUser(user);
-//            order.setProductId(product.getId());
-//            order.setProductName(product.getName());
-//            order.setQuantity(request.getQuantity());
-//            order.setTotalPrice(product.getPrice() * request.getQuantity());
-//            order.setOrderTime(LocalDateTime.now());
-//            order.setImageUrl(request.getImageUrl());
-//
-//            order.setAddress(request.getAddress() + ", " + request.getState() + ", " + request.getPincode());
-//            order.setPhone(request.getPhone());
-//            order.setPaymentMethod(request.getPaymentMethod());
-//            order.setStatus("Placed");
-//
-//            orderRepository.save(order);
-//
-//            return ResponseEntity.ok(Map.of("message", "Order placed successfully"));
-//        } catch (Exception e) {
-//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to place order");
-//        }
-//    }
 
 
     @PostMapping("/checkout/buy-now")

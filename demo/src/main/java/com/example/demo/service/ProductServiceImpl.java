@@ -11,9 +11,5 @@ public class ProductServiceImpl extends ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-//    @Transactional
-//    @Override
-//    public void deleteAllProducts() {
-//        productRepository.deleteAll(); // safe & works with foreign keys
-//    }
+
 }

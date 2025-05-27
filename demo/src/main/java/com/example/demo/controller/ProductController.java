@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@CrossOrigin(origins = {"http://localhost:5500", "http://localhost:5502"})
+@CrossOrigin(origins = {"http://localhost:5500", "http://localhost:5502","http://127.0.0.1:5501","http://localhost:3000"})
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
@@ -41,15 +41,6 @@ public class ProductController {
     }
 
 
-//    @DeleteMapping("/all")
-//    public ResponseEntity<String> deleteAllProducts() {
-//        try {
-//            productService.deleteAllProducts();
-//            return ResponseEntity.ok(" All products deleted successfully");
-//        } catch (Exception e) {
-//            return ResponseEntity.status(500).body(" Error deleting all products: " + e.getMessage());
-//        }
-//    }
 
 
     @GetMapping("/{id}")

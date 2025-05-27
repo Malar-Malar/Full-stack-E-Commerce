@@ -63,23 +63,5 @@ public class ProductService {
         return productRepository.searchByName(name);
     }
 
-//    @Transactional
-//    public abstract void deleteAllProducts();
-//
-//    @Transactional
-//    public void deleteProductById(Long productId) {
-//        // Step 1: Delete from cart_item
-//        cartItemRepository.deleteByProductId(productId);
-//
-//        // Step 2: Delete from product
-//        productRepository.deleteById(productId);
-//    }
-
-//    public void saveProduct(Product product) {
-//        productRepository.save(product);
-//    }
-
-//    SELECT * FROM products WHERE LOWER(name) LIKE '%cake%';
-
 
 }
